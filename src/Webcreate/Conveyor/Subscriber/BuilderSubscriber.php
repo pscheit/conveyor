@@ -22,7 +22,7 @@ class BuilderSubscriber implements EventSubscriberInterface
 {
     protected $io;
     protected $showProgress = false;
-    protected $needsNewline = false;
+    public $needsNewline = false;
 
     public function __construct(IOInterface $io)
     {
